@@ -87,13 +87,13 @@ function stockCheck(res) {
         );
         start();
       } else {
-        buyProducts(itemsID, purchasedQuant, oldStock, price);
+        buyProducts(); //itemsID, purchasedQuant, oldStock, price
       }
     }
   );
 }
 
-function buyProducts(product, quantity, presentStock, price) {
+function buyProducts() { //product, quantity, presentStock, price
   // let id = parseInt(data.item_id);
   connection.query(
     `UPDATE products SET ? WHERE ?`,
