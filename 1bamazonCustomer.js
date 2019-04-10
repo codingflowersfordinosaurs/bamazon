@@ -64,7 +64,7 @@ function listProducts() {
           product.product_name
         }, PRICE: ${product.price}`
       );
-      console.log("*******************************************");
+      console.log("**************************************************************");
     });
   });
 }
