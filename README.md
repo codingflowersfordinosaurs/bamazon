@@ -18,6 +18,6 @@
   - not enough of the product = message "insufficient stock; try again
   - if there is enough quantity, customer's order will be fulfilled; this should update the SQL database to reflect the remaining quantity
   -  once the update goes through, it shows the customer the total cost of their purchase
-![screenshot](./screenshot.png)
-![screenshot2](./screenshot2.png)
+![screenshot](./customer1.png)
+![screenshot2](./customer2.png)
 
