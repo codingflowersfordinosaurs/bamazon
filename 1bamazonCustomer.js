@@ -87,13 +87,13 @@ function stockCheck(res) {
         );
         start();
       } else {
-        buyProducts(); // may need to add params itemsID, purchasedQuant, oldStock, price
+        buyProducts(price, purchasedQuant, oldStock, itemsID); // may need to add params itemsID, purchasedQuant, oldStock, price
       }
     }
   );
 }
 
-function buyProducts() { //may need to add param from the stockCheck product, quantity, presentStock, price
+function buyProducts(price, presentStock, quantity, product) { //may need to add param from the stockCheck product, quantity, presentStock, price
   // let id = parseInt(data.item_id);
   connection.query(
     `UPDATE products SET ? WHERE ?`,
